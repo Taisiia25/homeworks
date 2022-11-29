@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <legend>Please fill out the form below </legend>
+            </header>
+            <!-- Form -->
+            <form action="#" method="#">
+                <!-- Name -->
+                <label class="name" for="name">Full name</label>
+                <input class="Field" type="text" id="name">
+                <!-- E-mail -->
+                <label class="email" for="email">Your e-mail adress</label>
+                <input class="Field" type="text" id="email">
+                <!-- Number -->
+                <label class="number" for="number">Your phone number</label>
+                <input class="Field" type="text" id="number">
+                <!-- Country -->
+                <label class="country" for="country">Select your country</label>
+                <select>
+                    <option class="countryField" id="country">UK</option>
+                    <option>USA</option>
+                </select>
+                <!-- Event -->
+                <h3>I want to attend event</h3>
+                    <ul class="radioButtons">
+                        <li class="radio1">
+                            <input class="radio" type="radio" id="online" name="type">
+                            <label class="type" for="online">online</label>
+                        </li>
+                        <li>
+                            <input class="radio" type="radio" id="offline" name="type">
+                            <label class="type" for="offline">offline</label>
+                        </li>
+                    </ul>
+                    <!-- Comments -->
+                        <label class="comments" for="comments">Comments</label>
+                        <textarea class="commentsField" id="comments"></textarea>
+                    <!-- Checkbox -->
+                        <div class="checkContainer">
+                            <input class="ckecklField" type="checkbox" id="check">
+                            <label class="check" for="check">I agree with the privacy policy</label>
+                        </div>
+                    <!-- Buttons --> 
+                    <div class="containerButtons">
+                        <input class="clearButton" type="reset" value="Clear form"/>
+                        <input class="submitButton" type="submit" value="Submit form"/>
+                    </div> 
+                    
+            </form>
+        </div>    
+    </body>
+</html>

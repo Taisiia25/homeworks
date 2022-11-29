@@ -1,0 +1,186 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  font: 20px/23px 'Times New Roman', serif;
+  color: #000000;
+}
+a {
+  color: #000000;
+}
+a:hover {
+  text-decoration: none;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+  
+.header {
+  width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0 ;
+}
+.mainTitle {
+  font: 60px/69px 'Arial', sans-serif;
+  margin: 0 0 47px;
+}
+.discription {
+  width: 1024px;
+  margin: 0 auto 52px;
+}
+
+.button {
+padding: 22px 48px;
+background: #5E964B;
+border-radius: 10px;
+border: 0;
+color: #FFFFFF;
+text-transform: uppercase;
+font: 30px/32px 'Arial', sans-serif;
+margin: 0 0 68px;
+cursor: pointer;
+}
+
+.navigation {
+  margin: 0 75px;
+  color: #000000;
+  text-decoration: none;
+}
+.navigation:hover {
+  text-decoration: underline;
+}
+
+.important-text {
+  display: block;
+  font-size: 40px;
+  line-height: 46px;
+  color: #FFFFFF;
+  width: 1200px;
+  margin: 0 auto;
+}
+.text {
+  background: #CCCCCC;
+  padding: 77px 0;
+  text-align: center;
+  margin: 0 0 100px;
+}
+
+.mainText {
+  width: 1300px;
+  background: #CCCCCC;
+  margin: 0 auto 150px; 
+  padding: 40px 50px 50px;
+}
+ .points {
+  display: flex;
+  margin-bottom: 85px;
+  color: #000000; 
+}
+
+.pointsBox {
+  width: 350px;
+  min-height: 300px;
+  padding: 20px 70px 20px 20px;
+  margin: 0 25px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.mark {
+  color: #5E964B;
+  font-weight: bold;
+  font-weight: 700;
+}
+.article {
+  width: 600px;
+}
+
+.info1 {
+  margin-bottom: 44px;
+  font: 40px/46px 'Arial', sans-serif;
+  color: #FFFFFF;
+}
+
+.info2 {
+  color: #000000;
+  margin: 0 0 77px;
+}
+
+.button2 {
+background: #FFFFFF;
+color: #5E964B;
+border: 2px solid #5E964B;
+margin: 0;
+}
+
+.footer {
+color: #000000;
+margin: 0 auto;
+width: 1300px;
+padding: 0 50px 166px;
+text-align: right;
+}
+
+.a1 {
+  margin: 0 0 40px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000000;
+  margin-left: 40px;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+

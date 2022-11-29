@@ -1,0 +1,323 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  font: 28px/39px 'Montserrat', sans-serif;
+  color: #005BBB;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  max-width: 1024px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 80px 0 0;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 81px;
+}
+.navigation {
+  margin: 0 auto 80px;
+}
+.link {
+  margin: 0 80px;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 24px;
+}
+.intro {
+  text-align: left;
+}
+.sentence {
+  margin: 28px 0;
+}
+.main-content {
+  max-width: 1024px;
+  text-align: center;
+  margin: 0 auto;
+}
+.main-header {
+  font-size: 40px;
+  line-height: 49px;
+  font-weight: 900;
+}
+.main-header:before {
+  content: "";
+  max-width: 1024px;
+  border: 1px solid #005BBB;
+  margin: 80px 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-header:after {
+  content: "";
+  width: 500px;
+  border: 1px solid #005BBB;
+  margin: 16px auto 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-information {
+  display: flex;
+}
+
+.box {
+  max-height: 394px;
+  width: 487px;
+  color: #FFFFFF;
+  background-color: #005BBB;
+  padding: 40px;
+  margin-right: 28px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  
+}
+.paragraph {
+  font-size: 18px;
+  line-height: 25.2px;
+  text-align: left;
+}
+.number {
+  font-size: 48px;
+}
+
+.box:before {
+  content: "";
+  width: 10px;
+  height: 394px;
+  background-color: #FFD500;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.comment-area {
+  border: 1px solid #005BBB;
+  max-width: 1024px;
+  margin: 0 auto 500px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.comment-field {
+  font-size: 18px;
+  flex: 1 1 0;
+  border: none;
+  resize: none;
+  padding: 18px 2px 0;
+  outline: none;
+  color: #005BBB;
+  font-family: 'Montserrat', sans-serif;
+}
+::placeholder {
+  opacity: 0.5;
+  font-size: 18px;
+  font-family: 'Montserrat';
+  border: none;
+  color: #005BBB;
+}
+
+.label-block {
+  color: #005BBB;
+}
+.btn {
+  font-size: 28px;
+  color: #fff;
+  width: 200px;
+  height: 60px;
+  background: #005BBB;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-weight: 400;
+}
+
+
+/* tablet */
+
+@media 
+
+(min-width: 1024px)
+and (max-width: 1199px) {
+  .header {
+    max-width: 904px;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin: 48 auto 0 81px;
+  }
+  .navigation {
+    position: absolute;
+    left: -999999px;
+  }
+  .intro {
+    font-size: 24px;
+    line-height: 33.6px;
+  }
+  .main-header {
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 900;
+  }
+  .main-content {
+    max-width: 904px;
+  }
+  
+  .main-information {
+    display: block;
+    margin-bottom: 100px;
+  }
+  .box {
+    width: 100%;
+    margin-bottom: 28px;
+  }
+  .box:before {
+    content: "";
+    width: 10px;
+    height: 100%;
+}
+  .comment-area {
+    max-width: 904px;
+  }
+
+ 
+}
+
+/* mobile */
+
+@media only screen
+
+and (min-width: 0)
+and (max-width: 1023px) {
+
+  .header {
+    margin: 100px auto 48px;
+    max-width: 335px;
+    font-size: 16px;
+    line-height: 22.4px;
+    
+  }
+  .logo,
+  .navigation {
+    display: none;
+  }
+  .main-content {
+    max-width: 335px;
+  }
+  .main-information {
+    display: block;
+    margin: 24px auto 48px;
+  }
+  .paragraph {
+    font-size: 16px;
+    line-height: 22.4px;
+  }
+  .number {
+    font-size: 24px;
+  }
+  .sentence {
+    margin: 15px 0;
+  }
+  .main-header:after {
+    content: "";
+    max-width: 335px;
+  }
+  .main-header:before {
+    margin: 0 0 16px;
+  }
+  .main-header:after {
+    margin: 16px auto 0;
+  }
+  
+  .box {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  .box:before {
+    content: "";
+    width: 10px;
+    height: 100%;
+}
+.comment-area {
+  border: 1px solid #005BBB;
+  max-width: 335px;
+  margin: 24px auto 360px;
+  padding: 20px 20px 100px;
+  display: block;
+  position: relative;
+
+}
+.comment-field {
+  display: block;
+  width: 295px;
+  text-align: center;
+}
+
+.btn {
+  width: 335px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 200px;
+  
+}
+ 
+
+}
