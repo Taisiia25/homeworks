@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Title</title>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="slick/slick.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       <div class="wrapper">
+        <header class="header" id="header">
+            <!-- Logo -->
+            <div  class="logo">
+                <svg width="68" height="59" viewBox="0 0 68 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M68 19.6667L34.0557 0L0 19.6667V59L68 19.6667Z" fill="#005BBB"/>
+                    <path d="M68 59V25.6334L38.9227 42.2083L68 59Z" fill="#005BBB"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M35.6327 45.366L12.25 58.866L11.75 58L35.1327 44.5L35.6327 45.366Z" fill="#005BBB"/>
+                </svg>
+            </div> 
+            <!-- Navigation --> 
+            <nav class="navigation">
+                <a class="link" href="#">gallery</a>
+                <a class="link" href="#">history</a>
+                <a class="link" href="#">contact us</a>
+            </nav>
+            <button href="#" class="btn-burger" id="btn-burger">
+                <svg width="48" height="31" viewBox="0 0 48 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0H48V5H0V0Z" fill="#005BBB"/>
+                    <path d="M0 13H48V18H0V13Z" fill="#005BBB"/>
+                    <path d="M48 26H0V31H48V26Z" fill="#005BBB"/>
+                </svg>
+            </button>
+            <button href="#" class="btn-close" id="btn-close">
+                <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.9998 15.9646L3.79689 0.761719L0.261353 4.29725L15.4642 19.5001L0.261485 34.7029L3.79702 38.2384L18.9998 23.0357L34.2025 38.2384L37.738 34.7028L22.5353 19.5001L37.7381 4.29726L34.2026 0.761727L18.9998 15.9646Z" fill="white"/>
+                </svg>
+            </button>
+        </header>
+            <!-- Slider --> 
+            <div class="gallery">
+                <div><img src="img/image1.png"></div>
+                <div><img src="img/image2.png"></div>
+                <div><img src="img/image3.png"></div>
+                <div><img src="img/image2.png"></div>
+                <div><img src="img/image1.png"></div>
+            </div>
+
+            <!-- Introduction --> 
+            <div class="intro">
+                <p>We are an architectural firm with a long history and extensive experience. Our intention is to help Ukrainians rebuild their homes and buildings even better than they were before the war.</p>
+                <p class="sentence">Please take a look at our history and contact us if you are intrested.</p>
+                <p>We would be really glad to join the help to Ukraine as we can. 
+                Glory to Ukraine!</p>
+            </div>
+        
+        <!-- Main-content --> 
+        <div class="main-content">
+            <h1 class="main-header">HISTORY</h1>
+            <div class="main-information">
+                <div class="box">
+                    <p class="paragraph"><span class="number">1890</span> Fusce rhoncus at sapien at sollicitudin. Quisque semper sollicitudin libero eget placerat. Aliquam quis laoreet tellus. In id congue lacus. Nulla vestibulum turpis et nisi consequat, non sagittis purus interdum. Nunc eu dolor urna. Quisque fermentum risus quam, at consectetur leo tincidunt id. Nulla facilisi.</p>
+                </div>
+                <div class="box">
+                    <p class="paragraph"><span class="number">1920</span> Aliquam erat volutpat. Curabitur et accumsan odio, eget scelerisque risus. Suspendisse ultrices mattis accumsan. In hac habitasse platea dictumst. In non nisl turpis. Sed sit amet purus odio. Donec aliquam leo a tortor tincidunt, vel molestie neque commodo. Ut pellentesque ut ex pulvinar aliquam. Morbi porttitor, felis quis convallis tincidunt, augue felis euismod lectus, a placerat purus justo eget magna. Mauris neque nisi, pharetra, vehicula non lorem.</p>
+                </div>    
+            </div>
+            <h1 class="main-header">CONTACT US</h1>
+        </div>
+        <!-- Form --> 
+        <form action="#" method="#" class="comment-area">
+            <textarea class="comment-field" name="comment" placeholder="type your message here" id="comment01"></textarea>
+          
+            <input class="btn" type="submit" value="SEND">
+        </form>
+
+        <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="slick/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script> 
+        <script type="text/javascript" src="js/script.js"></script> 
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('.gallery').slick({
+                arrows: false,
+                dots: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [
+                    {
+                        breakpoint: 1025,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 601,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                    
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+            ]
+            });
+            });
+          </script> 
+      </div>    
+    </body>
+</html>
